@@ -1,0 +1,59 @@
+.merits {
+    background-color: var(--color-bg);
+}
+
+.merits__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.merit-card {
+    background-color: var(--color-bg-alt);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.merit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.merit-card__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(197, 160, 89, 0.1);
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.merit-card__title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.merit-card__number {
+    font-family: var(--font-family-heading);
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.merit-card__description {
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
